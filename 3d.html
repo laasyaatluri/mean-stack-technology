@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+var no_of_tkts;
+tkt_cst=150;
+var total_cst=0;
+no_of_tkts=parseInt(window.prompt("enter tkts","0"));
+if(no_of_tkts>=6 && no_of_tkts<=0)
+ {
+window.alert("booking is not possible");
+ }
+else if(no_of_tkts>=1 && no_of_tkts<=2)
+{
+total_cst=tkt_cst*no_of_tkts;
+document.write("total_cst"+total_cst);
+document.write("<br>");
+}
+else
+{
+total_cst=tkt_cst*no_of_tkts;
+document.write("total_cst"+total_cst);
+document.write("<br>");
+discount=total_cst*0.05;
+document.write("discount"+discount);
+document.write("<br>");
+amt_to_paid=total_cst-discount;
+document.write("amt_to_paid"+amt_to_paid);
+}
+</script>
+</head>
+</html>
