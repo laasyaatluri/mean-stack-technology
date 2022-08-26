@@ -1,0 +1,20 @@
+<html>
+<head>
+<h2 id="d"></h2>
+<h3 id="de"></h3>                 
+<script>
+function f3(x,y,callback)
+{
+document.getElementById("de").innerHTML=x+y;
+callback();
+}
+function f4()
+{
+var d=new Date();
+document.getElementById("d").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+setInterval(f4)
+f3(5,8,f4);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+</script>
+</head>
+</html>

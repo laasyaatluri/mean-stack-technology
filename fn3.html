@@ -1,0 +1,13 @@
+<html>
+<head>
+<h2 id="demo"></h2>                 
+<script>
+function timer()
+{
+var d=new Date();
+document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+setInterval(timer,1000);
+</script>
+</head>
+</html>
